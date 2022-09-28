@@ -35,8 +35,10 @@ for i in range (len(movie_rating)):
     movie_rating[i] = movie_rating[i].strip()
 
 
-d = [movie_titles, movie_date, movie_rating]
-export_data = zip_longest(*d, fillvalue = '')
+data = [movie_titles, movie_date, movie_rating]
+export_data = zip_longest(*data, fillvalue = '')
+
+#opening the csv file 
 
 with open (r"C:\\Users\\microbox\Desktop\\python programming\web scraping\\file1.csv", "w", encoding="ISO-8859-1", newline='') as myfile:
     wr = csv.writer(myfile)
