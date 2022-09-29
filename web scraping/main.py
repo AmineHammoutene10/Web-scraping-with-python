@@ -1,7 +1,13 @@
+import matplotlib
 import requests 
 from bs4 import BeautifulSoup   
 import csv 
 from itertools import zip_longest
+
+#libraries for plotting and visualization of data 
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd 
 
 result = requests.get("https://www.imdb.com/chart/top/?ref_=nv_mv_250")
 
@@ -38,10 +44,33 @@ for i in range (len(movie_rating)):
 data = [movie_titles, movie_date, movie_rating]
 export_data = zip_longest(*data, fillvalue = '')
 
+
 #opening the csv file 
 
 with open (r"C:\\Users\\microbox\Desktop\\python programming\web scraping\\file1.csv", "w", encoding="ISO-8859-1", newline='') as myfile:
     wr = csv.writer(myfile)
     wr.writerow(("Movie Title", "Release Date", "Rating"))
     wr.writerows(export_data)
+
+
+#visualize the rating of movies 
+
+#import data from csv file 
+df = pd.read_csv(r"C:\\Users\\microbox\Desktop\\python programming\web scraping\\file1.csv", encoding="latin-1")
+df.head()
+
+df.shape 
+#plotting the data
+plt.figure(figsize=(10,10))
+plt.bar(df['Movie Title'].head(20), df['Rating'].head(20), color='b')
+plt.xticks(rotation=90)
+plt.xlabel('Movie Title')
+plt.ylabel('Rating')
+plt.title('Top 20 Movies')
+plt.show()
+
+
+
+
+
 
