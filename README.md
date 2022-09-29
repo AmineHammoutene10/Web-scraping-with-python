@@ -11,5 +11,7 @@ Plotting data
 
 i used Matplotlib, NumPy, Pandas
 
-<img src="https://i0.wp.com/neptune.ai/wp-content/uploads/numpy-logo.png?resize=411%2C163&ssl=1" width="100" height="50">           <img src="https://matplotlib.org/_static/images/logo_dark.svg" width="100" height="50">         <img src="/static/img/pandas_white.svg" width="100" height="50">  src="/static/img/pandas_white.svg"
+<img src="https://i0.wp.com/neptune.ai/wp-content/uploads/numpy-logo.png?resize=411%2C163&ssl=1" width="120" height="50">
+<img src="https://matplotlib.org/_static/images/logo_dark.svg" width="100" height="50">         
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/1200px-Pandas_mark.svg.png" width="70" height="70">  
 
