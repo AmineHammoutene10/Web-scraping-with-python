@@ -5,7 +5,7 @@ using python language python
 
 ![alt text](https://www.python.org/static/img/python-logo.png) 
 
-Making a top 20 movies of IMDB website by rating
+Making a top 20 movies of IMDB website by rating with visualization 
 Cleaning and stock data into csv file
 Plotting data 
 
